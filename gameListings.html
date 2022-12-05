@@ -6,19 +6,25 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-<nav class="navbar navbar-dark bg-secondary fixed-top navbar-expand-md">
-    <div class="navbar-brand"><img src="images/black-line-tattoo-d-dice-style-180367268.jpg"></div>
-    <div id="nav_collapse" class="navbar-collapse collapse">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Create a Game Listing</a> </li>
-            <li class="nav-item"><a href="index.html" class="nav-link">Back to Store</a> </li>
-        </ul>
+<div id = 'app'>
+    <nav class="navbar navbar-dark bg-secondary fixed-top navbar-expand-md">
+        <div class="navbar-brand"><img src="images/black-line-tattoo-d-dice-style-180367268.jpg"></div>
+        <div id="nav_collapse" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Create a Game Listing</a> </li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Back to Store</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <game-listing-collection></game-listing-collection>
     </div>
-</nav>
-<div class="container-fluid">
-    <game-listing-collection></game-listing-collection>
 </div>
+
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/components/AppModal.js"></script>
     <script src="js/components/GameListingCollection.js"></script>
     <script src="js/components/GameListingCreationModal.js"></script>
@@ -26,5 +32,8 @@
     <script src="js/components/GameSignUpModal.js"></script>
     <script src="js/models/GameListing.js"></script>
     <script src="js/models/Firebase.js"></script>
+    <script>
+        app.mount('#app');
+    </script>
 </body>
 </html>

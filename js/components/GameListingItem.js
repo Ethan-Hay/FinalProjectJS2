@@ -7,7 +7,7 @@ app.component('GameListingItem',{
     },
     methods:{
         signUp(){
-
+            new bootstrap.Modal(this.$refs.signup.$el).show();
         }
     },
     template:
@@ -36,6 +36,7 @@ app.component('GameListingItem',{
           <div v-else>
             Game is full
           </div>
+        <game-sign-up-modal id = 'signup' ref = 'signup'></game-sign-up-modal>
         </div>
     `
 })
