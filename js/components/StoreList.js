@@ -25,8 +25,23 @@ app.component('StoreList', {
           })
         }
     },
+    mounted() {
+        this.loadRulebooks()
+    },
     template:`<div>
-    <store-item v-for="product in products" :product="product" :key = "product.id"></store-item>
+    <nav class="navbar navbar-expand-sm">
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" @click="loadRulebooks" class="nav-link">Rulebooks</a> </li>
+          <li class="nav-item"><a href="#" @click="loadDice" class="nav-link">Dice</a> </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="item-list">
+      <store-item v-for="product in products" :product="product" :key = "product.id"></store-item>
+    </div>
+    
+   
     </div>`
 
 })

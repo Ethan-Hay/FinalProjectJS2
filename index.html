@@ -11,24 +11,18 @@
         <div id="nav_collapse" class="navbar-collapse collapse">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="gameListings.html" class="nav-link">Find a Game</a> </li>
-                <li class="nav-item"><a href="#" class="nav-link">Cart</a> </li>
-            </ul>
+                </ul>
         </div>
     </nav>
-    <div>
-        <nav class="navbar">
-            <div class="navbar-collapse collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#" @click="" class="nav-link">Rulebooks</a> </li>
-                    <li class="nav-item"><a href="#" @click="" class="nav-link">Dice</a> </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div class="container-fluid">
+
+    <div class="container-fluid" style="margin-top: 200px" id = 'app'>
+
         <store-list></store-list>
+        <cart-list></cart-list>
+
     </div>
-    <script src="js/bootstrap.min.js"></script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
     <script src="js/app.js"></script>
@@ -37,8 +31,12 @@
     <script src="js/components/AppModal.js"></script>
     <script src="js/models/Product.js"></script>
     <script src="js/models/Firebase.js"></script>
+    <script src="js/components/CartItem.js"></script>
+    <script src="js/components/CartList.js"></script>
+
     <script>
         app.mount('#app');
     </script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

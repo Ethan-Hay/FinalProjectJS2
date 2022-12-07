@@ -16,7 +16,7 @@ app.component('GameListingCollection',{
       this.loadListings();
     },
     template:`
-      <div>
+      <div class="item-list">
         <game-listing-item v-for="listing in listings" :listing = listing :key = 'listing.id'></game-listing-item>
       </div>
     `

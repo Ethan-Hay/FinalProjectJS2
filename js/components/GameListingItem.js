@@ -12,7 +12,7 @@ app.component('GameListingItem',{
     },
     template:
     `
-        <div>
+        <div class="individual-item">
           <h6>
             {{listing.game}}
           </h6>
@@ -36,7 +36,7 @@ app.component('GameListingItem',{
           <div v-else>
             Game is full
           </div>
-        <game-sign-up-modal id = 'signup' ref = 'signup'></game-sign-up-modal>
+        <game-sign-up-modal id = 'signup' ref = 'signup' :listing = 'listing'></game-sign-up-modal>
         </div>
     `
 })
