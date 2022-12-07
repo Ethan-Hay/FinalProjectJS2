@@ -27,9 +27,10 @@ app.component('CartList',{
         purchaseCartItems(){
             db.collection('cart').onSnapshot(snapshot => {
                 snapshot.forEach(doc => {
-                    db.collection('cart').doc(this.product.id).delete();
+                    db.collection('cart').doc(doc.id).delete();
                 })
             })
+
         }
     },
     mounted: function (){

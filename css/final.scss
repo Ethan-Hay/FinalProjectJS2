@@ -2,10 +2,12 @@ $primary:#ED3127;
 @import "bootstrap";
 .item-list{
   border-color: $primary;
-  border-width: 10px;
+  border-width: 5px;
+  border-style: solid;
 }
 .individual-item
 {
   border-color: $primary;
-  border-width: 10px;
+  border-width: 5px;
+  border-style: solid;
 }

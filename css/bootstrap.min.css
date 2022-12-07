@@ -11192,12 +11192,14 @@ textarea.form-control-lg {
 /*# sourceMappingURL=bootstrap.css.map */
 .item-list {
   border-color: #ED3127;
-  border-width: 10px;
+  border-width: 5px;
+  border-style: solid;
 }
 
 .individual-item {
   border-color: #ED3127;
-  border-width: 10px;
+  border-width: 5px;
+  border-style: solid;
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
